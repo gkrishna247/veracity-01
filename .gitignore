@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# ML/Data (Ignoring heavy model files)
+*.pt
+*.pth
+*.h5
+*.weights
+*.pkl
+*.joblib
+outputs/best_model.pt
+
+# Others
+.DS_Store
+*.log
