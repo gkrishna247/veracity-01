@@ -21,3 +21,6 @@ outputs/best_model.pt
 # Others
 .DS_Store
 *.log
+
+# input
+input/images/
