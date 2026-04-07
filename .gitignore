@@ -24,3 +24,4 @@ outputs/best_model.pt
 
 # input
 input/images/
+input/datasets/
