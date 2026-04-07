@@ -1,0 +1,16 @@
+# Veracity AI — Python Dependencies
+# Install: pip install -r requirements.txt
+
+fastapi>=0.100.0
+uvicorn[standard]>=0.20.0
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.30.0
+Pillow>=9.0.0
+pandas>=2.0.0
+numpy>=1.24.0
+lime>=0.2.0.post2
+python-multipart>=0.0.5
+jinja2>=3.1.0
+aiosqlite>=0.19.0
+opencv-python-headless>=4.8.0

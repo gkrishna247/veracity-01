@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Veracity AI — Multimodal Fake News Detection Dashboard powered by mBERT, ResNet-50, and Cross-Attention Fusion.">
+    <title>Veracity AI — Multimodal Fake News Detection</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Plotly.js CDN -->
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
+
+    <!-- App Styles -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!--  TOP BAR                                                          -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <header class="top-bar" id="top-bar">
+        <div class="top-bar__left">
+            <button class="top-bar__hamburger" id="sidebar-toggle" aria-label="Toggle sidebar">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="top-bar__brand">
+                <span class="brand-icon">◈</span>
+                <span class="brand-text">VERACITY <span class="brand-accent">AI</span></span>
+            </div>
+        </div>
+        <div class="top-bar__right">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <span class="theme-toggle__icon" id="theme-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!--  APP CONTAINER                                                    -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <div class="app-container" id="app-container">
+
+        <!-- ─── SIDEBAR ──────────────────────────────────────────────── -->
+        <nav class="sidebar" id="sidebar">
+            <ul class="sidebar__nav">
+                <li><a href="#/overview" class="nav-item" data-page="overview"><span class="nav-icon">🏠</span><span class="nav-label">Overview</span></a></li>
+                <li><a href="#/predict"  class="nav-item" data-page="predict"><span class="nav-icon">🔮</span><span class="nav-label">Predict</span></a></li>
+                <li><a href="#/batch"    class="nav-item" data-page="batch"><span class="nav-icon">📦</span><span class="nav-label">Batch</span></a></li>
+                <li><a href="#/history"  class="nav-item" data-page="history"><span class="nav-icon">📜</span><span class="nav-label">History</span></a></li>
+
+                <li class="nav-divider"></li>
+
+                <li><a href="#/evaluation"     class="nav-item" data-page="evaluation"><span class="nav-icon">📊</span><span class="nav-label">Evaluation</span></a></li>
+                <li><a href="#/adversarial"     class="nav-item" data-page="adversarial"><span class="nav-icon">🛡️</span><span class="nav-label">Adversarial</span></a></li>
+                <li><a href="#/explainability"  class="nav-item" data-page="explainability"><span class="nav-icon">🔍</span><span class="nav-label">XAI</span></a></li>
+
+                <li class="nav-divider"></li>
+
+                <li><a href="#/dataset"   class="nav-item" data-page="dataset"><span class="nav-icon">📁</span><span class="nav-label">Datasets</span></a></li>
+                <li><a href="#/training"  class="nav-item" data-page="training"><span class="nav-icon">📈</span><span class="nav-label">Training</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- ─── MAIN CONTENT ─────────────────────────────────────────── -->
+        <main class="main-content" id="main-content">
+            <div id="page-content" class="page-content">
+                <!-- Pages are rendered here by router.js -->
+            </div>
+        </main>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!--  FOOTER                                                           -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <footer class="footer" id="footer">
+        <span>© 2026 Veracity AI</span>
+        <span class="footer__dot">•</span>
+        <span>Multimodal Fake News Detection</span>
+    </footer>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!--  MODAL OVERLAY (reusable)                                         -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-content" id="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!--  SCRIPTS                                                          -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/theme.js"></script>
+    <script src="/static/js/charts.js"></script>
+    <script src="/static/js/pages/overview.js"></script>
+    <script src="/static/js/pages/predict.js"></script>
+    <script src="/static/js/pages/batch.js"></script>
+    <script src="/static/js/pages/history.js"></script>
+    <script src="/static/js/pages/evaluation.js"></script>
+    <script src="/static/js/pages/adversarial.js"></script>
+    <script src="/static/js/pages/explainability.js"></script>
+    <script src="/static/js/pages/dataset.js"></script>
+    <script src="/static/js/pages/training.js"></script>
+    <script src="/static/js/router.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

@@ -25,3 +25,7 @@ outputs/best_model.pt
 # input
 input/images/
 input/datasets/
+
+# Dashboard runtime artifacts
+dashboard/db/
+dashboard/uploads/
