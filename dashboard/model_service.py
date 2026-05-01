@@ -43,7 +43,8 @@ _device: torch.device | None = None
 _tokenizer: AutoTokenizer | None = None
 
 _image_transform = transforms.Compose([
-    transforms.Resize((IMAGE_SIZE, IMAGE_SIZE), interpolation=transforms.InterpolationMode.BICUBIC),
+    transforms.Resize(256, interpolation=transforms.InterpolationMode.BICUBIC),
+    transforms.CenterCrop(IMAGE_SIZE),
     transforms.ToTensor(),
     transforms.Normalize(mean=IMAGENET_MEAN, std=IMAGENET_STD),
 ])
