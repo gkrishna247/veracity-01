@@ -9,8 +9,10 @@ from pathlib import Path
 
 # ── Base Paths ────────────────────────────────────────────────────────────────
 BASE_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = BASE_DIR.parent
+NEW_RESULTS_DIR = PROJECT_ROOT / "new_results" / "outputs"
 
-MODEL_DIR = BASE_DIR / "model"
+MODEL_DIR = NEW_RESULTS_DIR
 MODEL_PATH = MODEL_DIR / "best_model.pt"
 
 DATA_DIR = BASE_DIR / "data"
@@ -18,8 +20,8 @@ DATASETS_DIR = DATA_DIR / "datasets"
 GOSSIPCOP_CSV = DATASETS_DIR / "gossipcop_final.csv"
 WEIBO_CSV = DATASETS_DIR / "weibo_final.csv"
 
-EVALUATION_DIR = BASE_DIR / "evaluation"
-LIME_DIR = BASE_DIR / "lime_reports"
+EVALUATION_DIR = NEW_RESULTS_DIR
+LIME_DIR = NEW_RESULTS_DIR
 UPLOADS_DIR = BASE_DIR / "uploads"
 TEST_DATA_DIR = BASE_DIR / "test_data"
 

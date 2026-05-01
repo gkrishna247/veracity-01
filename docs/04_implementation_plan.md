@@ -30,11 +30,11 @@
 
 1. **Create directory tree** — All folders as specified in [03_design.md § Folder Structure](./03_design.md)
 
-2. **Copy model** — `outputs/best_model.pt` → `dashboard/model/best_model.pt` (~818 MB)
+2. **Configure Model Path** — Model is located at `new_results/outputs/best_model.pt` (~818 MB). Update `config.py` to point `MODEL_DIR` here instead of copying it.
 
 3. **Copy dataset CSVs** — `input/datasets/gossipcop_final.csv` and `weibo_final.csv` → `dashboard/data/datasets/`
 
-4. **Copy evaluation artifacts** (8 files) — All JSONs and PNGs from `outputs/` → `dashboard/evaluation/`:
+4. **Configure Evaluation Artifacts** (8 files) — All JSONs and PNGs are read from `new_results/outputs/` via `config.py` `EVALUATION_DIR`:
    - `evaluation_results_detailed.json`
    - `evaluation_table.csv`
    - `adversarial_results.json`
@@ -44,7 +44,7 @@
    - `shap_summary.png`
    - `training_curves.png`
 
-5. **Copy LIME reports** (20 files) — `outputs/lime_sample_*.html` → `dashboard/lime_reports/`
+5. **Configure LIME reports** (20 files) — LIME files are read from `new_results/outputs/lime_sample_*.html` via `config.py` `LIME_DIR`.
 
 6. **DO NOT copy `input/images/`** — The full Weibo image directory is excluded.
 
@@ -77,10 +77,10 @@
 
 ### Verification
 - [ ] `dashboard/` directory tree matches design doc exactly
-- [ ] `model/best_model.pt` exists and is ~818 MB
+- [ ] `best_model.pt` exists in `new_results/outputs/` and is ~818 MB
 - [ ] Both CSV files exist in `data/datasets/`
-- [ ] 8 evaluation files exist in `evaluation/`
-- [ ] 20 LIME files exist in `lime_reports/`
+- [ ] 8 evaluation files exist in `new_results/outputs/`
+- [ ] 20 LIME files exist in `new_results/outputs/`
 - [ ] Test data CSVs have correct columns and row counts
 - [ ] Test images exist in correct real/fake folders
 - [ ] `data/images/` directory does NOT exist
