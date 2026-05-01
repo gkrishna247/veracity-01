@@ -29,3 +29,5 @@ input/datasets/
 # Dashboard runtime artifacts
 dashboard/db/
 dashboard/uploads/
+
+new_results/
