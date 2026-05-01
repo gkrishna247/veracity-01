@@ -37097,17 +37097,17 @@
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.9534756541252136, 0.04652437940239906]);
+            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.9698174595832825, 0.030182482674717903]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["real", "fake"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Keaton", 0.004188155039693815], ["SEP", -0.0030569861875054116], ["More", -0.0029180801935486944], ["Out", 0.0018467154333070687], ["that", 0.0018267229599754342], ["the", 0.001780839259910891], ["to", 0.0010500669588748312], ["is", 0.0010417092943638562], ["Has", 0.0010408070727346665], ["life", 0.0007456067100410035]], 1, exp_div);
+                exp.show([["Keaton", -0.0175012814924653], ["SEP", -0.015626954732594213], ["Brought", 0.010959275204342329], ["More", -0.01020570761651404], ["Backlash", 0.009665780354922613], ["return", -0.00859824683407229], ["spread", 0.007338120730975217], ["on", -0.0059340965112603455], ["life", 0.005301564813556811], ["when", -0.005250476998277406]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Keaton", 0, 0.004188155039693815], ["Keaton", 60, 0.004188155039693815], ["Keaton", 193, 0.004188155039693815], ["Keaton", 494, 0.004188155039693815], ["SEP", 55, -0.0030569861875054116], ["SEP", 162, -0.0030569861875054116], ["More", 35, -0.0029180801935486944], ["Out", 49, 0.0018467154333070687], ["that", 272, 0.0018267229599754342], ["the", 312, 0.001780839259910891], ["the", 338, 0.001780839259910891], ["to", 89, 0.0010500669588748312], ["to", 296, 0.0010500669588748312], ["is", 206, 0.0010417092943638562], ["Has", 23, 0.0010408070727346665], ["life", 226, 0.0007456067100410035]], 1, "Keaton Jones: Backlash Has Brought More 'Bullies Out' [SEP] Keaton Jones hasn't returned to school since a video of him speaking out against bullying went viral [SEP] Tennessee middle-schooler Keaton Jones is opening up about life after his anti-bullying video, revealing that he hasn\u2019t returned to school since the footage spread across the Internet.\n\nThe 11-year-old and his mother, Kimberly Jones, appeared on British talk show This Morning on Thursday where they said they aren\u2019t sure when Keaton will return", raw_div, true);
+            exp.show_raw_text([["Keaton", 0, -0.0175012814924653], ["Keaton", 60, -0.0175012814924653], ["Keaton", 193, -0.0175012814924653], ["Keaton", 494, -0.0175012814924653], ["SEP", 55, -0.015626954732594213], ["SEP", 162, -0.015626954732594213], ["Brought", 27, 0.010959275204342329], ["More", 35, -0.01020570761651404], ["Backlash", 14, 0.009665780354922613], ["return", 506, -0.00859824683407229], ["spread", 324, 0.007338120730975217], ["on", 410, -0.0059340965112603455], ["on", 444, -0.0059340965112603455], ["life", 226, 0.005301564813556811], ["when", 489, -0.005250476998277406]], 1, "Keaton Jones: Backlash Has Brought More 'Bullies Out' [SEP] Keaton Jones hasn't returned to school since a video of him speaking out against bullying went viral [SEP] Tennessee middle-schooler Keaton Jones is opening up about life after his anti-bullying video, revealing that he hasn\u2019t returned to school since the footage spread across the Internet.\n\nThe 11-year-old and his mother, Kimberly Jones, appeared on British talk show This Morning on Thursday where they said they aren\u2019t sure when Keaton will return", raw_div, true);
             
         </script>
         </body></html>

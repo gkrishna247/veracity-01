@@ -37097,17 +37097,17 @@
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.9617021083831787, 0.038297902792692184]);
+            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.9822463989257812, 0.017753612250089645]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["real", "fake"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["SEP", -0.0143356817908019], ["Stamos", 0.013103236981713935], ["birthday", -0.006070806691526202], ["John", -0.005655950372919504], ["adorable", -0.005172365884539408], ["time", 0.0037097384742562464], ["These", 0.0033685143967655574], ["That", 0.002989048326838419], ["Full", 0.0025204924317136592], ["been", 0.0025016956827163214]], 1, exp_div);
+                exp.show([["SEP", -0.01992137703862717], ["Stamos", 0.007623900214164231], ["John", -0.007425103411985491], ["birthday", -0.006928972225541297], ["Full", 0.00687704842302958], ["special", -0.006485235091517771], ["and", 0.006420545209936471], ["picture", -0.00440592784520159], ["time", 0.004197409020179857], ["These", 0.0037045301437858007]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["SEP", 98, -0.0143356817908019], ["SEP", 353, -0.0143356817908019], ["Stamos", 5, 0.013103236981713935], ["Stamos", 167, 0.013103236981713935], ["Stamos", 422, 0.013103236981713935], ["birthday", 193, -0.006070806691526202], ["birthday", 448, -0.006070806691526202], ["John", 0, -0.005655950372919504], ["John", 162, -0.005655950372919504], ["John", 417, -0.005655950372919504], ["adorable", 184, -0.005172365884539408], ["adorable", 439, -0.005172365884539408], ["time", 321, 0.0037097384742562464], ["These", 274, 0.0033685143967655574], ["That", 55, 0.002989048326838419], ["Full", 132, 0.0025204924317136592], ["Full", 387, 0.0025204924317136592], ["been", 296, 0.0025016956827163214]], 1, "John Stamos' Birthday Message For Lori Loughlin Proves That Uncle Jesse | Aunt Becky Are Forever [SEP] Get ready to feel nostalgic, Full House fans. On Saturday, John Stamos posted an adorable birthday message for Lori Loughlin, and it featured a special throwback picture. These two actors have been co-stars for a long time, and they first appeared\u2026 [SEP] Get ready to feel nostalgic, Full House fans. On Saturday, John Stamos posted an adorable birthday message for Lori Loughlin, and it featured a special th", raw_div, true);
+            exp.show_raw_text([["SEP", 98, -0.01992137703862717], ["SEP", 353, -0.01992137703862717], ["Stamos", 5, 0.007623900214164231], ["Stamos", 167, 0.007623900214164231], ["Stamos", 422, 0.007623900214164231], ["John", 0, -0.007425103411985491], ["John", 162, -0.007425103411985491], ["John", 417, -0.007425103411985491], ["birthday", 193, -0.006928972225541297], ["birthday", 448, -0.006928972225541297], ["Full", 132, 0.00687704842302958], ["Full", 387, 0.00687704842302958], ["special", 247, -0.006485235091517771], ["special", 502, -0.006485235091517771], ["and", 229, 0.006420545209936471], ["and", 327, 0.006420545209936471], ["and", 484, 0.006420545209936471], ["picture", 265, -0.00440592784520159], ["time", 321, 0.004197409020179857], ["These", 274, 0.0037045301437858007]], 1, "John Stamos' Birthday Message For Lori Loughlin Proves That Uncle Jesse | Aunt Becky Are Forever [SEP] Get ready to feel nostalgic, Full House fans. On Saturday, John Stamos posted an adorable birthday message for Lori Loughlin, and it featured a special throwback picture. These two actors have been co-stars for a long time, and they first appeared\u2026 [SEP] Get ready to feel nostalgic, Full House fans. On Saturday, John Stamos posted an adorable birthday message for Lori Loughlin, and it featured a special th", raw_div, true);
             
         </script>
         </body></html>

@@ -37097,17 +37097,17 @@
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.9423056840896606, 0.05769431218504906]);
+            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.9704984426498413, 0.02950156293809414]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["real", "fake"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["and", 0.007498561122618814], ["are", 0.006712211806657515], ["Times", 0.005194931805053461], ["times", 0.00503524219889714], ["rants", 0.0049735885369286414], ["on", -0.0037994849024013348], ["SEP", -0.0036677339995967854], ["Chrissy", -0.003345311313737858], ["en", -0.002535437412337633], ["19", -0.00031393373243425313]], 1, exp_div);
+                exp.show([["19", -0.010342935623171037], ["Hilariously", 0.009460693210638351], ["angry", 0.008229237289993006], ["Chrissy", -0.008088501175097912], ["on", -0.007807917218881933], ["SEP", -0.007451767938190577], ["s", -0.006149725245131409], ["entertaining", -0.005891104398508904], ["en", -0.0049189547915522375], ["humorous", -0.0033475679693283833]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["and", 87, 0.007498561122618814], ["and", 152, 0.007498561122618814], ["and", 190, 0.007498561122618814], ["and", 305, 0.007498561122618814], ["are", 344, 0.006712211806657515], ["are", 398, 0.006712211806657515], ["Times", 3, 0.005194931805053461], ["times", 405, 0.00503524219889714], ["rants", 249, 0.0049735885369286414], ["on", 55, -0.0037994849024013348], ["on", 178, -0.0037994849024013348], ["on", 458, -0.0037994849024013348], ["SEP", 67, -0.0036677339995967854], ["SEP", 105, -0.0036677339995967854], ["Chrissy", 9, -0.003345311313737858], ["Chrissy", 110, -0.003345311313737858], ["Chrissy", 411, -0.003345311313737858], ["en", 510, -0.002535437412337633], ["19", 0, -0.00031393373243425313], ["19", 402, -0.00031393373243425313]], 1, "19 Times Chrissy Teigen Hilariously Ventured Her Anger on Twitter [SEP] iCloud, Mario, and John Legend. [SEP] Chrissy Teigen is known for her quick wit and entertaining presence on Twitter, and when she's angry, she doesn't hold back. From humorous rants about technology glitches to blasting celebrities and politicians, Teigen's angry tweets are a source of entertainment for her followers. Here are 19 times Chrissy Teigen hilariously let her anger loose on Twitter.\n\n1. Macbook Update Requests: Teigen had en", raw_div, true);
+            exp.show_raw_text([["19", 0, -0.010342935623171037], ["19", 402, -0.010342935623171037], ["Hilariously", 24, 0.009460693210638351], ["angry", 205, 0.008229237289993006], ["angry", 331, 0.008229237289993006], ["Chrissy", 9, -0.008088501175097912], ["Chrissy", 110, -0.008088501175097912], ["Chrissy", 411, -0.008088501175097912], ["on", 55, -0.007807917218881933], ["on", 178, -0.007807917218881933], ["on", 458, -0.007807917218881933], ["SEP", 67, -0.007451767938190577], ["SEP", 105, -0.007451767938190577], ["s", 203, -0.006149725245131409], ["s", 329, -0.006149725245131409], ["entertaining", 156, -0.005891104398508904], ["en", 510, -0.0049189547915522375], ["humorous", 240, -0.0033475679693283833]], 1, "19 Times Chrissy Teigen Hilariously Ventured Her Anger on Twitter [SEP] iCloud, Mario, and John Legend. [SEP] Chrissy Teigen is known for her quick wit and entertaining presence on Twitter, and when she's angry, she doesn't hold back. From humorous rants about technology glitches to blasting celebrities and politicians, Teigen's angry tweets are a source of entertainment for her followers. Here are 19 times Chrissy Teigen hilariously let her anger loose on Twitter.\n\n1. Macbook Update Requests: Teigen had en", raw_div, true);
             
         </script>
         </body></html>

@@ -37097,17 +37097,17 @@
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.9567256569862366, 0.043274279683828354]);
+            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.9566114544868469, 0.043388575315475464]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["real", "fake"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["SEP", -0.007778404935479803], ["Is", 0.003629550534377378], ["an", -0.003269054672016221], ["Gambino", 0.0028585253027344775], ["brings", 0.0021492696376630587], ["and", 0.0020888602241359187], ["with", 0.0019487284270109002], ["the", -0.0019046910778001472], ["The", 0.001889130087538633], ["In", -0.0012970278313093938]], 1, exp_div);
+                exp.show([["SEP", -0.0351353938666162], ["Glover", -0.026208191125965348], ["spreading", 0.02316913691649204], ["Is", 0.020239843094839026], ["an", -0.012547643825423463], ["wildfire", 0.012432123573858917], ["by", -0.008888880898115745], ["of", -0.008317494813100887], ["the", -0.004036212956771367], ["event", -0.002111864909916087]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["SEP", 93, -0.007778404935479803], ["SEP", 152, -0.007778404935479803], ["Is", 65, 0.003629550534377378], ["Is", 277, 0.003629550534377378], ["an", 31, -0.003269054672016221], ["an", 230, -0.003269054672016221], ["an", 505, -0.003269054672016221], ["Gambino", 476, 0.0028585253027344775], ["brings", 109, 0.0021492696376630587], ["and", 187, 0.0020888602241359187], ["with", 500, 0.0019487284270109002], ["the", 20, -0.0019046910778001472], ["the", 490, -0.0019046910778001472], ["The", 312, 0.001889130087538633], ["In", 157, -0.0012970278313093938]], 1, "Donald Glover Gives the People an Impromptu Performance of 'This Is America' - (Video Clip) [SEP] Jamie Foxx brings Donald Glover on stage to perform. [SEP] In a stunning surprise, actor and musician Donald Glover treated fans to an impromptu performance of his hit song 'This Is America' during a recent event. The electrifying moment was captured on video, quickly spreading like wildfire across social media platforms.\n\nGlover, widely recognized by his stage name Childish Gambino, took the stage with an infe", raw_div, true);
+            exp.show_raw_text([["SEP", 93, -0.0351353938666162], ["SEP", 152, -0.0351353938666162], ["Glover", 7, -0.026208191125965348], ["Glover", 123, -0.026208191125965348], ["Glover", 207, -0.026208191125965348], ["Glover", 423, -0.026208191125965348], ["spreading", 367, 0.02316913691649204], ["Is", 65, 0.020239843094839026], ["Is", 277, 0.020239843094839026], ["an", 31, -0.012547643825423463], ["an", 230, -0.012547643825423463], ["an", 505, -0.012547643825423463], ["wildfire", 382, 0.012432123573858917], ["by", 449, -0.008888880898115745], ["of", 56, -0.008317494813100887], ["of", 255, -0.008317494813100887], ["the", 20, -0.004036212956771367], ["the", 490, -0.004036212956771367], ["event", 305, -0.002111864909916087]], 1, "Donald Glover Gives the People an Impromptu Performance of 'This Is America' - (Video Clip) [SEP] Jamie Foxx brings Donald Glover on stage to perform. [SEP] In a stunning surprise, actor and musician Donald Glover treated fans to an impromptu performance of his hit song 'This Is America' during a recent event. The electrifying moment was captured on video, quickly spreading like wildfire across social media platforms.\n\nGlover, widely recognized by his stage name Childish Gambino, took the stage with an infe", raw_div, true);
             
         </script>
         </body></html>

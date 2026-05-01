@@ -37097,17 +37097,17 @@
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.9088208079338074, 0.09117913991212845]);
+            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.9656903147697449, 0.03430964797735214]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["real", "fake"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Selena", 0.05320904076369223], ["Gomez", 0.029766961502447457], ["Revival", -0.025945972592686103], ["you", -0.02515464258138529], ["From", -0.020971027293347558], ["has", 0.014476978370829546], ["We", 0.012900970684119299], ["Ruler", 0.012428715670612375], ["to", 0.01143427612968018], ["Dream", 0.006135878107884502]], 1, exp_div);
+                exp.show([["accom", -0.017778181328358882], ["Revival", -0.013892901445954387], ["SEP", -0.012927746779702057], ["Dream", 0.010816077971515313], ["180", 0.010471293396568382], ["Disney", 0.009374714183693327], ["you", -0.009331185428218182], ["Selena", 0.009100797628101374], ["taking", -0.008116537735022644], ["ultimate", 0.007152478873914794]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Selena", 0, 0.05320904076369223], ["Selena", 125, 0.05320904076369223], ["Gomez", 7, 0.029766961502447457], ["Gomez", 132, 0.029766961502447457], ["Revival", 63, -0.025945972592686103], ["you", 97, -0.02515464258138529], ["you", 184, -0.02515464258138529], ["you", 194, -0.02515464258138529], ["From", 33, -0.020971027293347558], ["From", 449, -0.020971027293347558], ["has", 138, 0.014476978370829546], ["We", 84, 0.012900970684119299], ["Ruler", 72, 0.012428715670612375], ["to", 59, 0.01143427612968018], ["to", 304, 0.01143427612968018], ["to", 428, 0.01143427612968018], ["to", 504, 0.01143427612968018], ["Dream", 53, 0.006135878107884502]], 1, "Selena Gomez's Artist Evolution, From Disney Channel Dream to 'Revival' Ruler [SEP] We're taking you all the way back. [SEP] Selena Gomez has come a long way with her music. Just when you think you have her all figured out, the Disney Channel alum does a total 180 and switches things up on her fans. So to celebrate our brand-new artist evolution column, we figured taking a look back at all her music would be the perfect way to kick things off.\n\nFrom releasing the ultimate pop jam \"One and the Same\" to accom", raw_div, true);
+            exp.show_raw_text([["accom", 507, -0.017778181328358882], ["Revival", 63, -0.013892901445954387], ["SEP", 79, -0.012927746779702057], ["SEP", 120, -0.012927746779702057], ["Dream", 53, 0.010816077971515313], ["180", 261, 0.010471293396568382], ["Disney", 38, 0.009374714183693327], ["Disney", 228, 0.009374714183693327], ["you", 97, -0.009331185428218182], ["you", 184, -0.009331185428218182], ["you", 194, -0.009331185428218182], ["Selena", 0, 0.009100797628101374], ["Selena", 125, 0.009100797628101374], ["taking", 90, -0.008116537735022644], ["taking", 367, -0.008116537735022644], ["ultimate", 468, 0.007152478873914794]], 1, "Selena Gomez's Artist Evolution, From Disney Channel Dream to 'Revival' Ruler [SEP] We're taking you all the way back. [SEP] Selena Gomez has come a long way with her music. Just when you think you have her all figured out, the Disney Channel alum does a total 180 and switches things up on her fans. So to celebrate our brand-new artist evolution column, we figured taking a look back at all her music would be the perfect way to kick things off.\n\nFrom releasing the ultimate pop jam \"One and the Same\" to accom", raw_div, true);
             
         </script>
         </body></html>

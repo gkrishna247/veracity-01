@@ -37097,17 +37097,17 @@
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.956506609916687, 0.04349338263273239]);
+            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.9607328176498413, 0.03926711156964302]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["real", "fake"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Jenner", 0.005848475713731852], ["SEP", -0.004633780336658131], ["Don", 0.003072375973414799], ["Kylie", 0.002975569614042093], ["Wednesday", -0.0026840486438903157], ["couple", 0.0023059463180320687], ["girlfriend", 0.0021412388227720846], ["thi", -0.0019343168838064668], ["stepped", 0.0019256452965035024], ["may", -0.0017322058739763085]], 1, exp_div);
+                exp.show([["Scott", 0.013700017138143693], ["Carbone", -0.009747190136097029], ["Travis", 0.008989433976799693], ["They", 0.008155831749559415], ["but", 0.006543849870914559], ["SEP", -0.006454527856621956], ["Don", 0.006213799901142271], ["wore", -0.005106444344473975], ["York", -0.00473380391955968], ["t", -0.0029086478988085366]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Jenner", 6, 0.005848475713731852], ["Jenner", 353, 0.005848475713731852], ["Jenner", 361, 0.005848475713731852], ["SEP", 89, -0.004633780336658131], ["SEP", 170, -0.004633780336658131], ["Don", 69, 0.003072375973414799], ["Kylie", 0, 0.002975569614042093], ["Kylie", 347, 0.002975569614042093], ["Wednesday", 159, -0.0026840486438903157], ["Wednesday", 238, -0.0026840486438903157], ["couple", 98, 0.0023059463180320687], ["girlfriend", 336, 0.0021412388227720846], ["thi", 509, -0.0019343168838064668], ["stepped", 105, 0.0019256452965035024], ["may", 188, -0.0017322058739763085]], 1, "Kylie Jenner and Travis Scott Dine in N.Y.C. After She Reveals They 'Don't Go on Dates' [SEP] The couple stepped out for dinner at Carbone in New York City on Wednesday [SEP] Travis Scott may hate restaurants, but he made an exception on Wednesday night.\n\nThe rapper was spotted arriving for dinner at Carbone in New York City with his girlfriend Kylie Jenner. Jenner, 20, was all smiles in a black minidress and combat boots for the night out, while Scott, 27, wore jeans and a t-shirt, accessorizing with a thi", raw_div, true);
+            exp.show_raw_text([["Scott", 24, 0.013700017138143693], ["Scott", 182, 0.013700017138143693], ["Scott", 451, 0.013700017138143693], ["Carbone", 131, -0.009747190136097029], ["Carbone", 302, -0.009747190136097029], ["Travis", 17, 0.008989433976799693], ["Travis", 175, 0.008989433976799693], ["They", 63, 0.008155831749559415], ["but", 210, 0.006543849870914559], ["SEP", 89, -0.006454527856621956], ["SEP", 170, -0.006454527856621956], ["Don", 69, 0.006213799901142271], ["wore", 462, -0.005106444344473975], ["York", 146, -0.00473380391955968], ["York", 317, -0.00473380391955968], ["t", 73, -0.0029086478988085366], ["t", 479, -0.0029086478988085366]], 1, "Kylie Jenner and Travis Scott Dine in N.Y.C. After She Reveals They 'Don't Go on Dates' [SEP] The couple stepped out for dinner at Carbone in New York City on Wednesday [SEP] Travis Scott may hate restaurants, but he made an exception on Wednesday night.\n\nThe rapper was spotted arriving for dinner at Carbone in New York City with his girlfriend Kylie Jenner. Jenner, 20, was all smiles in a black minidress and combat boots for the night out, while Scott, 27, wore jeans and a t-shirt, accessorizing with a thi", raw_div, true);
             
         </script>
         </body></html>

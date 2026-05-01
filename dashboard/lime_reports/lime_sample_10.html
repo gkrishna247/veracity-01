@@ -37097,17 +37097,17 @@
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.9233787655830383, 0.07662120461463928]);
+            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.9187519550323486, 0.08124803751707077]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["real", "fake"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Dewan", 0.024667014849180866], ["Jenna", 0.023545080359078853], ["her", -0.01261571143837329], ["to", 0.012580162084427825], ["by", 0.009807499939683101], ["showcases", -0.009683800015073248], ["And", 0.008503759776851525], ["J", 0.007538079745611552], ["Lulu", -0.007537842090980299], ["support", -0.005776703411748739]], 1, exp_div);
+                exp.show([["SEP", -0.020559142430986013], ["denim", -0.017979761975721015], ["was", 0.016421123381308834], ["vet", 0.015528214355121759], ["J", 0.015393411138366146], ["spotted", 0.013762331762899867], ["sense", 0.012391443835153058], ["following", 0.01059688274327739], ["support", -0.009154080229711236], ["Angeles", -0.008512740439061318]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Dewan", 6, 0.024667014849180866], ["Dewan", 370, 0.024667014849180866], ["Jenna", 0, 0.023545080359078853], ["Jenna", 364, 0.023545080359078853], ["her", 22, -0.01261571143837329], ["her", 79, -0.01261571143837329], ["her", 134, -0.01261571143837329], ["her", 246, -0.01261571143837329], ["her", 281, -0.01261571143837329], ["her", 400, -0.01261571143837329], ["her", 449, -0.01261571143837329], ["her", 480, -0.01261571143837329], ["to", 87, 0.012580162084427825], ["to", 329, 0.012580162084427825], ["to", 413, 0.012580162084427825], ["by", 243, 0.009807499939683101], ["showcases", 12, -0.009683800015073248], ["And", 360, 0.008503759776851525], ["J", 306, 0.007538079745611552], ["Lulu", 408, -0.007537842090980299], ["support", 468, -0.005776703411748739]], 1, "Jenna Dewan showcases her chic sense of style in denim midi dress as she takes her dog to the vet [SEP] The Step Up actress showcased her chic sense of style as she strolled along the pavement in a denim midi dress with the adorable pet pooch by her side. [SEP] She recently threw her weight behind Jessie J's statement reacting to the 'copycat' comparisons.\n\nAnd Jenna Dewan, 37, was spotted taking her dog Lulu to the vet in Los Angeles following her show of public support for her ex husband's new girlfriend,", raw_div, true);
+            exp.show_raw_text([["SEP", 99, -0.020559142430986013], ["SEP", 257, -0.020559142430986013], ["denim", 49, -0.017979761975721015], ["denim", 198, -0.017979761975721015], ["was", 381, 0.016421123381308834], ["vet", 94, 0.015528214355121759], ["vet", 420, 0.015528214355121759], ["J", 306, 0.015393411138366146], ["spotted", 385, 0.013762331762899867], ["sense", 31, 0.012391443835153058], ["sense", 143, 0.012391443835153058], ["following", 439, 0.01059688274327739], ["support", 468, -0.009154080229711236], ["Angeles", 431, -0.008512740439061318]], 1, "Jenna Dewan showcases her chic sense of style in denim midi dress as she takes her dog to the vet [SEP] The Step Up actress showcased her chic sense of style as she strolled along the pavement in a denim midi dress with the adorable pet pooch by her side. [SEP] She recently threw her weight behind Jessie J's statement reacting to the 'copycat' comparisons.\n\nAnd Jenna Dewan, 37, was spotted taking her dog Lulu to the vet in Los Angeles following her show of public support for her ex husband's new girlfriend,", raw_div, true);
             
         </script>
         </body></html>

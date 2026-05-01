@@ -37097,17 +37097,17 @@
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.9464654922485352, 0.05353451520204544]);
+            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.9668711423873901, 0.033128879964351654]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["real", "fake"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["has", 0.0032960526165073424], ["Munn", 0.003220662721966173], ["down", 0.002851475133259241], ["is", 0.002318422557487138], ["throughout", 0.0022885882486444274], ["Savings", 0.0022881575757217397], ["Magazine", 0.001967523484133768], ["Reports", 0.0018554593698241809], ["Fashion", -0.0016686889795662018], ["shearling", -0.0013940299315624127]], 1, exp_div);
+                exp.show([["shearling", -0.008948796653210703], ["locations", 0.008759768394911898], ["Taylor", 0.0076393951284862175], ["Reports", 0.0068736816809552076], ["50", -0.004865217329594669], ["it", -0.004575202936350039], ["sprung", -0.004518716776822093], ["SEP", -0.004197527409893668], ["Olivia", -0.003567959882859091], ["Munn", -0.0016848400782833825]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["has", 175, 0.0032960526165073424], ["Munn", 25, 0.003220662721966173], ["Munn", 307, 0.003220662721966173], ["down", 389, 0.002851475133259241], ["is", 214, 0.002318422557487138], ["is", 353, 0.002318422557487138], ["is", 499, 0.002318422557487138], ["throughout", 261, 0.0022885882486444274], ["Savings", 9, 0.0022881575757217397], ["Magazine", 94, 0.001967523484133768], ["Reports", 129, 0.0018554593698241809], ["Fashion", 86, -0.0016686889795662018], ["shearling", 314, -0.0013940299315624127]], 1, "Saturday Savings: Olivia Munn's Shearling Jacket Is Now Only $50! [SEP] Lifestyle And Fashion Magazine From Parker XL, Get Daily Reports On Trends And Self Help. [SEP] Spring has virtually sprung! Too dangerous it is nonetheless fairly chilly in most locations throughout the U.S.\n\nFortunate for us, Olivia Munn\u2018s shearling-lined jacket from Ann Taylor is now on sale for $forty eight.88, down from $198. The actress wore the price range-pleasant topper whereas working in Toronto final week (so it is obtained t", raw_div, true);
+            exp.show_raw_text([["shearling", 314, -0.008948796653210703], ["locations", 251, 0.008759768394911898], ["Taylor", 346, 0.0076393951284862175], ["Reports", 129, 0.0068736816809552076], ["50", 62, -0.004865217329594669], ["it", 211, -0.004575202936350039], ["it", 496, -0.004575202936350039], ["sprung", 189, -0.004518716776822093], ["SEP", 67, -0.004197527409893668], ["SEP", 163, -0.004197527409893668], ["Olivia", 18, -0.003567959882859091], ["Olivia", 300, -0.003567959882859091], ["Munn", 25, -0.0016848400782833825], ["Munn", 307, -0.0016848400782833825]], 1, "Saturday Savings: Olivia Munn's Shearling Jacket Is Now Only $50! [SEP] Lifestyle And Fashion Magazine From Parker XL, Get Daily Reports On Trends And Self Help. [SEP] Spring has virtually sprung! Too dangerous it is nonetheless fairly chilly in most locations throughout the U.S.\n\nFortunate for us, Olivia Munn\u2018s shearling-lined jacket from Ann Taylor is now on sale for $forty eight.88, down from $198. The actress wore the price range-pleasant topper whereas working in Toronto final week (so it is obtained t", raw_div, true);
             
         </script>
         </body></html>

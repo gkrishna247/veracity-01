@@ -37097,17 +37097,17 @@
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.7357247471809387, 0.2642752230167389]);
+            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.8789255023002625, 0.12107454985380173]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["real", "fake"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Selena", 0.10515953067687982], ["to", 0.05466109481851326], ["Gomez", 0.04656985702588901], ["Francia", 0.045570869999685425], ["Actress", 0.04516591960067897], ["best", -0.03789710551906103], ["that", 0.033850292058899084], ["tough", 0.029870260189393448], ["Raisa", -0.026411681152475264], ["Fr", -0.017724770221949137]], 1, exp_div);
+                exp.show([["Selena", 0.0738192892196811], ["Gomez", 0.040587173697579935], ["to", 0.03708676818082861], ["opened", 0.0326661808490869], ["best", -0.024035270596574697], ["lupus", -0.023148666404094183], ["BFF", -0.017131728692527336], ["Fr", -0.015449244903478036], ["2017", -0.013717369512665917], ["kidney", -0.00388589630341977]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Selena", 80, 0.10515953067687982], ["Selena", 199, 0.10515953067687982], ["Selena", 263, 0.10515953067687982], ["to", 73, 0.05466109481851326], ["to", 180, 0.05466109481851326], ["to", 431, 0.05466109481851326], ["Gomez", 87, 0.04656985702588901], ["Gomez", 206, 0.04656985702588901], ["Gomez", 270, 0.04656985702588901], ["Gomez", 460, 0.04656985702588901], ["Francia", 0, 0.045570869999685425], ["Francia", 107, 0.045570869999685425], ["Actress", 99, 0.04516591960067897], ["best", 187, -0.03789710551906103], ["best", 496, -0.03789710551906103], ["that", 480, 0.033850292058899084], ["tough", 34, 0.029870260189393448], ["Raisa", 8, -0.026411681152475264], ["Raisa", 115, -0.026411681152475264], ["Fr", 510, -0.017724770221949137]], 1, "Francia Raisa opened up about her tough recovery after donating a kidney to BFF Selena Gomez [SEP] Actress Francia Raisa opened up about her rough recovery after donating a kidney to her best friend Selena Gomez. Here are the details. [SEP] In September of 2017, Selena Gomez shocked her fans when she revealed the reason she had stepped out of the public eye for a few months: She had been recovering from a kidney transplant due to complications from lupus. Gomez also revealed that one of her best friends, Fr", raw_div, true);
+            exp.show_raw_text([["Selena", 80, 0.0738192892196811], ["Selena", 199, 0.0738192892196811], ["Selena", 263, 0.0738192892196811], ["Gomez", 87, 0.040587173697579935], ["Gomez", 206, 0.040587173697579935], ["Gomez", 270, 0.040587173697579935], ["Gomez", 460, 0.040587173697579935], ["to", 73, 0.03708676818082861], ["to", 180, 0.03708676818082861], ["to", 431, 0.03708676818082861], ["opened", 14, 0.0326661808490869], ["opened", 121, 0.0326661808490869], ["best", 187, -0.024035270596574697], ["best", 496, -0.024035270596574697], ["lupus", 453, -0.023148666404094183], ["BFF", 76, -0.017131728692527336], ["Fr", 510, -0.015449244903478036], ["2017", 257, -0.013717369512665917], ["kidney", 66, -0.00388589630341977], ["kidney", 173, -0.00388589630341977], ["kidney", 409, -0.00388589630341977]], 1, "Francia Raisa opened up about her tough recovery after donating a kidney to BFF Selena Gomez [SEP] Actress Francia Raisa opened up about her rough recovery after donating a kidney to her best friend Selena Gomez. Here are the details. [SEP] In September of 2017, Selena Gomez shocked her fans when she revealed the reason she had stepped out of the public eye for a few months: She had been recovering from a kidney transplant due to complications from lupus. Gomez also revealed that one of her best friends, Fr", raw_div, true);
             
         </script>
         </body></html>

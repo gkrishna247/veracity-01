@@ -37097,17 +37097,17 @@
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.9554415941238403, 0.04455846548080444]);
+            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.962815523147583, 0.037184540182352066]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["real", "fake"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Gigi", 0.03585514396526713], ["SEP", -0.032672740327964224], ["Can", -0.026137263303655414], ["able", -0.02203347490475144], ["sh", -0.016835360453240727], ["wait", 0.01616720177134757], ["Fashion", -0.014302042261938068], ["with", 0.012959489794174451], ["bummed", -0.009597716640054087], ["to", 0.009276596722152334]], 1, exp_div);
+                exp.show([["Can", -0.062033049794958633], ["the", -0.05139978222128162], ["sh", -0.044332616298068686], ["SEP", -0.04289357785055233], ["Fashion", -0.03866658413546894], ["t", -0.034493520295903524], ["fans", 0.032884516491726155], ["yesterday", 0.028622604846563295], ["to", 0.027970943582138162], ["with", 0.02714780564058062]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Gigi", 0, 0.03585514396526713], ["Gigi", 135, 0.03585514396526713], ["SEP", 92, -0.032672740327964224], ["SEP", 130, -0.032672740327964224], ["Can", 453, -0.026137263303655414], ["able", 356, -0.02203347490475144], ["sh", 510, -0.016835360453240727], ["wait", 459, 0.01616720177134757], ["Fashion", 47, -0.014302042261938068], ["Fashion", 252, -0.014302042261938068], ["with", 423, 0.012959489794174451], ["with", 475, 0.012959489794174451], ["bummed", 338, -0.009597716640054087], ["to", 361, 0.009276596722152334], ["to", 372, 0.009276596722152334], ["to", 464, 0.009276596722152334], ["to", 489, 0.009276596722152334]], 1, "Gigi Hadid Pulled Out of the Victoria's Secret Fashion Show, and the Internet Has Opinions [SEP] \"May this be a lesson for her.\" [SEP] Gigi Hadid fans received unexpected some news yesterday: the supermodel will not be walking in the Victoria\u2019s Secret Fashion Show this week in Shanghai. In an announcement on Twitter she posted, \u201cI\u2019m so bummed I won\u2019t be able to make it to China this year. Love my VS family, and will be with all my girls in spirit!! Can't wait to tune in with everyone to see the beautiful sh", raw_div, true);
+            exp.show_raw_text([["Can", 453, -0.062033049794958633], ["the", 25, -0.05139978222128162], ["the", 65, -0.05139978222128162], ["the", 192, -0.05139978222128162], ["the", 230, -0.05139978222128162], ["the", 496, -0.05139978222128162], ["sh", 510, -0.044332616298068686], ["SEP", 92, -0.04289357785055233], ["SEP", 130, -0.04289357785055233], ["Fashion", 47, -0.03866658413546894], ["Fashion", 252, -0.03866658413546894], ["t", 351, -0.034493520295903524], ["t", 457, -0.034493520295903524], ["fans", 146, 0.032884516491726155], ["yesterday", 181, 0.028622604846563295], ["to", 361, 0.027970943582138162], ["to", 372, 0.027970943582138162], ["to", 464, 0.027970943582138162], ["to", 489, 0.027970943582138162], ["with", 423, 0.02714780564058062], ["with", 475, 0.02714780564058062]], 1, "Gigi Hadid Pulled Out of the Victoria's Secret Fashion Show, and the Internet Has Opinions [SEP] \"May this be a lesson for her.\" [SEP] Gigi Hadid fans received unexpected some news yesterday: the supermodel will not be walking in the Victoria\u2019s Secret Fashion Show this week in Shanghai. In an announcement on Twitter she posted, \u201cI\u2019m so bummed I won\u2019t be able to make it to China this year. Love my VS family, and will be with all my girls in spirit!! Can't wait to tune in with everyone to see the beautiful sh", raw_div, true);
             
         </script>
         </body></html>

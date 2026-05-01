@@ -1,7 +1,7 @@
 {
-  "clean_accuracy": 0.8371900826446281,
-  "fgsm_accuracy": 0.8309917355371901,
-  "pgd_accuracy": 0.8045454545454546,
-  "fgsm_drop_pct": 0.740375123395858,
-  "pgd_drop_pct": 3.899308983218165
+  "clean_accuracy": 0.8557851239669422,
+  "fgsm_accuracy": 0.8491735537190083,
+  "pgd_accuracy": 0.8223140495867769,
+  "fgsm_drop_pct": 0.7725736359246766,
+  "pgd_drop_pct": 3.9111540318686613
 }

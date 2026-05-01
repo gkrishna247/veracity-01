@@ -37097,17 +37097,17 @@
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.9546033143997192, 0.045396700501441956]);
+            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.9697788953781128, 0.03022112138569355]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["real", "fake"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["SEP", -0.012408377858185098], ["rep", 0.0033382921640753944], ["confirms", 0.0028069747952117236], ["Jackson", 0.002320340920344378], ["Pierre", -0.002146517826317894], ["Laura", 0.0020060592845849703], ["Shawniece", 0.0017996237841553576], ["to", 0.0017113615909900436], ["Married", -0.001362153708212053], ["a", 0.0011509703744294105]], 1, exp_div);
+                exp.show([["SEP", -0.03207339932874187], ["on", -0.009363131575998924], ["rep", 0.009155560191810597], ["they", 0.008429709216162852], ["early", -0.008301906584080134], ["m", 0.00825236146036001], ["20", -0.0081684068248335], ["and", 0.007785465802063939], ["Born", -0.0071772375978027755], ["three", 0.006071667353993524]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["SEP", 67, -0.012408377858185098], ["SEP", 197, -0.012408377858185098], ["rep", 414, 0.0033382921640753944], ["confirms", 418, 0.0028069747952117236], ["Jackson", 10, 0.002320340920344378], ["Jackson", 126, 0.002320340920344378], ["Jackson", 291, 0.002320340920344378], ["Pierre", 29, -0.002146517826317894], ["Pierre", 145, -0.002146517826317894], ["Pierre", 215, -0.002146517826317894], ["Pierre", 310, -0.002146517826317894], ["Laura", 53, 0.0020060592845849703], ["Laura", 72, 0.0020060592845849703], ["Laura", 202, 0.0020060592845849703], ["Shawniece", 0, 0.0017996237841553576], ["Shawniece", 116, 0.0017996237841553576], ["Shawniece", 281, 0.0017996237841553576], ["to", 340, 0.0017113615909900436], ["to", 427, 0.0017113615909900436], ["Married", 164, -0.001362153708212053], ["Married", 243, -0.001362153708212053], ["a", 343, 0.0011509703744294105], ["a", 495, 0.0011509703744294105]], 1, "Shawniece Jackson and Jephte Pierre Welcome Daughter Laura Denise [SEP] Laura Denise is the first child for spouses Shawniece Jackson and Jephte Pierre, who met on Married at First Sight season 6 [SEP] Laura Denise Pierre has made her debut!\n\nMarried at First Sight season 6 stars Shawniece Jackson and Jephte Pierre are first-time parents to a baby girl they welcomed (three weeks early!) on Monday, Aug. 20, her rep confirms to PEOPLE exclusively.\n\nBorn after just five hours of labor at 7:47 a.m., the newborn", raw_div, true);
+            exp.show_raw_text([["SEP", 67, -0.03207339932874187], ["SEP", 197, -0.03207339932874187], ["on", 161, -0.009363131575998924], ["on", 390, -0.009363131575998924], ["rep", 414, 0.009155560191810597], ["they", 355, 0.008429709216162852], ["early", 382, -0.008301906584080134], ["m", 497, 0.00825236146036001], ["20", 406, -0.0081684068248335], ["and", 18, 0.007785465802063939], ["and", 134, 0.007785465802063939], ["and", 299, 0.007785465802063939], ["Born", 451, -0.0071772375978027755], ["three", 370, 0.006071667353993524]], 1, "Shawniece Jackson and Jephte Pierre Welcome Daughter Laura Denise [SEP] Laura Denise is the first child for spouses Shawniece Jackson and Jephte Pierre, who met on Married at First Sight season 6 [SEP] Laura Denise Pierre has made her debut!\n\nMarried at First Sight season 6 stars Shawniece Jackson and Jephte Pierre are first-time parents to a baby girl they welcomed (three weeks early!) on Monday, Aug. 20, her rep confirms to PEOPLE exclusively.\n\nBorn after just five hours of labor at 7:47 a.m., the newborn", raw_div, true);
             
         </script>
         </body></html>

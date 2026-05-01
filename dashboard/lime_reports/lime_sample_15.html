@@ -37097,17 +37097,17 @@
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.9600691199302673, 0.03993084281682968]);
+            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.9750423431396484, 0.02495764195919037]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["real", "fake"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["SEP", -0.009014707346671662], ["off", -0.004777138029293225], ["E", -0.004429479795546636], ["Fashion", -0.003432273297347635], ["featuring", 0.0028042533994989296], ["is", 0.0022090350005039812], ["Police", 0.0021013997197342534], ["The", 0.0019857881521895093], ["sho", 0.001957934714537392], ["27", 0.0013364364622740561]], 1, exp_div);
+                exp.show([["SEP", -0.01919611729884156], ["Fashion", -0.008722112033464763], ["E", -0.00609747120380065], ["featuring", -0.005965239385223964], ["series", -0.0056277170730848845], ["episode", -0.0054842095711604], ["special", -0.002950726222751781], ["Police", -0.001866568562912552], ["Joan", -0.0013711916373361712], ["Farewell", -0.0009631763499177419]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["SEP", 56, -0.009014707346671662], ["SEP", 154, -0.009014707346671662], ["off", 291, -0.004777138029293225], ["E", 271, -0.004429479795546636], ["Fashion", 0, -0.003432273297347635], ["Fashion", 61, -0.003432273297347635], ["Fashion", 188, -0.003432273297347635], ["Fashion", 319, -0.003432273297347635], ["featuring", 490, 0.0028042533994989296], ["is", 203, 0.0022090350005039812], ["Police", 8, 0.0021013997197342534], ["Police", 69, 0.0021013997197342534], ["Police", 196, 0.0021013997197342534], ["Police", 327, 0.0021013997197342534], ["The", 223, 0.0019857881521895093], ["The", 335, 0.0019857881521895093], ["sho", 509, 0.001957934714537392], ["27", 357, 0.0013364364622740561]], 1, "Fashion Police Ending Its Run with Joan Rivers Special [SEP] Fashion Police was helmed by the legendary comedian Joan Rivers since its inception in 1995 [SEP] After more than two decades, Fashion Police is ending its run.\n\nThe network announced Wednesday that the iconic E! series will sign off with a special episode, Fashion Police: The Farewell, on Nov. 27.\n\nHosted by Melissa Rivers, the special will reveal never-before-seen footage \u2014 including a previously unaired 80s-themed episode featuring the late sho", raw_div, true);
+            exp.show_raw_text([["SEP", 56, -0.01919611729884156], ["SEP", 154, -0.01919611729884156], ["Fashion", 0, -0.008722112033464763], ["Fashion", 61, -0.008722112033464763], ["Fashion", 188, -0.008722112033464763], ["Fashion", 319, -0.008722112033464763], ["E", 271, -0.00609747120380065], ["featuring", 490, -0.005965239385223964], ["series", 274, -0.0056277170730848845], ["episode", 310, -0.0054842095711604], ["episode", 482, -0.0054842095711604], ["special", 302, -0.002950726222751781], ["special", 392, -0.002950726222751781], ["Police", 8, -0.001866568562912552], ["Police", 69, -0.001866568562912552], ["Police", 196, -0.001866568562912552], ["Police", 327, -0.001866568562912552], ["Joan", 35, -0.0013711916373361712], ["Joan", 113, -0.0013711916373361712], ["Farewell", 339, -0.0009631763499177419]], 1, "Fashion Police Ending Its Run with Joan Rivers Special [SEP] Fashion Police was helmed by the legendary comedian Joan Rivers since its inception in 1995 [SEP] After more than two decades, Fashion Police is ending its run.\n\nThe network announced Wednesday that the iconic E! series will sign off with a special episode, Fashion Police: The Farewell, on Nov. 27.\n\nHosted by Melissa Rivers, the special will reveal never-before-seen footage \u2014 including a previously unaired 80s-themed episode featuring the late sho", raw_div, true);
             
         </script>
         </body></html>

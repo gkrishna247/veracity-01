@@ -37097,17 +37097,17 @@
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.9528675675392151, 0.04713241383433342]);
+            var pp = new lime.PredictProba(pp_svg, ["real", "fake"], [0.9741365909576416, 0.0258634090423584]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["real", "fake"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["SEP", -0.017801107432608973], ["intervi", -0.008360276509814893], ["recent", 0.00750867244140219], ["Hills", 0.007231188466930753], ["Jenner", 0.0065018994658467945], ["Caitlyn", 0.006215919903235858], ["Pratt", -0.006049561039210517], ["on", -0.005665832811054744], ["Controversially", -0.005383366024776306], ["Magazine", 0.004235285841542512]], 1, exp_div);
+                exp.show([["Pratt", -0.046591563775515356], ["Hills", 0.04381790545810744], ["Jenner", 0.036574690117296235], ["s", -0.035755405557185226], ["SEP", -0.03525530413623779], ["Comments", -0.030662818430068454], ["star", -0.028335607639440534], ["Over", 0.02540028936429512], ["Magazine", 0.019940294439375044], ["on", -0.019024437898186673]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["SEP", 109, -0.017801107432608973], ["SEP", 278, -0.017801107432608973], ["intervi", 505, -0.008360276509814893], ["recent", 498, 0.00750867244140219], ["Hills", 166, 0.007231188466930753], ["Jenner", 101, 0.0065018994658467945], ["Jenner", 184, 0.0065018994658467945], ["Jenner", 208, 0.0065018994658467945], ["Jenner", 459, 0.0065018994658467945], ["Caitlyn", 200, 0.006215919903235858], ["Pratt", 8, -0.006049561039210517], ["Pratt", 122, -0.006049561039210517], ["Pratt", 314, -0.006049561039210517], ["Pratt", 467, -0.006049561039210517], ["on", 92, -0.005665832811054744], ["on", 137, -0.005665832811054744], ["Controversially", 67, -0.005383366024776306], ["Magazine", 51, 0.004235285841542512]], 1, "Spencer Pratt Criticizes Lauren Conrad Over Failed Magazine Cover; Controversially Comments on Bruce Jenner [SEP] Spencer Pratt unloaded on Lauren Conrad and fellow \"Hills\" star Brody Jenner's parent Caitlyn Jenner in a new interview the reality show's fans will surely enjoy. [SEP] Reality TV personality Spencer Pratt recently called out former co-star Lauren Conrad over her unsuccessful magazine cover, while also making controversial remarks about Bruce Jenner. Pratt's comments came during a recent intervi", raw_div, true);
+            exp.show_raw_text([["Pratt", 8, -0.046591563775515356], ["Pratt", 122, -0.046591563775515356], ["Pratt", 314, -0.046591563775515356], ["Pratt", 467, -0.046591563775515356], ["Hills", 166, 0.04381790545810744], ["Jenner", 101, 0.036574690117296235], ["Jenner", 184, 0.036574690117296235], ["Jenner", 208, 0.036574690117296235], ["Jenner", 459, 0.036574690117296235], ["s", 191, -0.035755405557185226], ["s", 251, -0.035755405557185226], ["s", 473, -0.035755405557185226], ["SEP", 109, -0.03525530413623779], ["SEP", 278, -0.03525530413623779], ["Comments", 83, -0.030662818430068454], ["star", 173, -0.028335607639440534], ["star", 350, -0.028335607639440534], ["Over", 39, 0.02540028936429512], ["Magazine", 51, 0.019940294439375044], ["on", 92, -0.019024437898186673], ["on", 137, -0.019024437898186673]], 1, "Spencer Pratt Criticizes Lauren Conrad Over Failed Magazine Cover; Controversially Comments on Bruce Jenner [SEP] Spencer Pratt unloaded on Lauren Conrad and fellow \"Hills\" star Brody Jenner's parent Caitlyn Jenner in a new interview the reality show's fans will surely enjoy. [SEP] Reality TV personality Spencer Pratt recently called out former co-star Lauren Conrad over her unsuccessful magazine cover, while also making controversial remarks about Bruce Jenner. Pratt's comments came during a recent intervi", raw_div, true);
             
         </script>
         </body></html>

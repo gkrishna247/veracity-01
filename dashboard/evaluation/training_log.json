@@ -1,55 +1,62 @@
 [
   {
     "epoch": 1,
-    "train_loss": 0.6762666344146967,
-    "val_loss": 0.5785158923582027,
-    "val_acc": 0.6942148760330579,
+    "train_loss": 0.6628988416180046,
+    "val_loss": 0.5080835850615251,
+    "val_acc": 0.7578512396694215,
     "mean_grad_norm": NaN
   },
   {
     "epoch": 2,
-    "train_loss": 0.5489166030764827,
-    "val_loss": 0.4081757023538414,
-    "val_acc": 0.8285123966942148,
+    "train_loss": 0.5104457214939371,
+    "val_loss": 0.4182926372281815,
+    "val_acc": 0.8140495867768595,
     "mean_grad_norm": NaN
   },
   {
     "epoch": 3,
-    "train_loss": 0.4512296392429395,
-    "val_loss": 0.3970300517976284,
-    "val_acc": 0.8433884297520661,
+    "train_loss": 0.43573536335058866,
+    "val_loss": 0.4131387664299262,
+    "val_acc": 0.8136363636363636,
     "mean_grad_norm": NaN
   },
   {
     "epoch": 4,
-    "train_loss": 0.5375910624087229,
-    "val_loss": 0.6419583174743151,
-    "val_acc": 0.6276859504132232,
+    "train_loss": 0.3710183928451518,
+    "val_loss": 0.3913145931927781,
+    "val_acc": 0.8479338842975207,
     "mean_grad_norm": NaN
   },
   {
     "epoch": 5,
-    "train_loss": 0.6269538580379962,
-    "val_loss": 0.6456487133706871,
-    "val_acc": 0.6293388429752066,
+    "train_loss": 1.582819558447711,
+    "val_loss": 1.9442443898633908,
+    "val_acc": 0.5446280991735537,
     "mean_grad_norm": NaN
   },
   {
     "epoch": 6,
-    "train_loss": 0.6347284674023589,
+    "train_loss": 1.800777122533247,
+    "val_loss": 1.9486356134477414,
+    "val_acc": 0.5512396694214876,
+    "mean_grad_norm": NaN
+  },
+  {
+    "epoch": 7,
+    "train_loss": 1.8013313043390142,
+    "val_loss": 1.9553796213708425,
+    "val_acc": 0.5367768595041322,
+    "mean_grad_norm": NaN
+  },
+  {
+    "epoch": 8,
+    "train_loss": 1.8262690271322544,
     "val_loss": NaN,
     "val_acc": 0.5636363636363636,
     "mean_grad_norm": NaN
   },
   {
-    "epoch": 7,
-    "train_loss": 0.0,
-    "val_loss": NaN,
-    "val_acc": 0.5636363636363636,
-    "mean_grad_norm": 0.0
-  },
-  {
-    "epoch": 8,
+    "epoch": 9,
     "train_loss": 0.0,
     "val_loss": NaN,
     "val_acc": 0.5636363636363636,

@@ -54,7 +54,7 @@ Pre-prepared test samples are in `test_data/`:
 
 | Issue | Solution |
 |---|---|
-| Model load fails | Ensure `new_results/outputs/best_model.pt` exists (~818 MB) |
+| Model load fails | Ensure `model/best_model.pt` exists (~818 MB) |
 | Out of memory | Need ~4 GB free RAM for model loading |
 | Slow first startup | HuggingFace models download on first run (~500 MB) |
 | LIME is slow | Normal — LIME perturbs text 100 times per explanation |
