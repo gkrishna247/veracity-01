@@ -30,7 +30,6 @@ STATIC_DIR = BASE_DIR / "static"
 TEMPLATES_DIR = BASE_DIR / "templates"
 
 # ── Model Configuration ──────────────────────────────────────────────────────
-BERT_MODEL_NAME = "bert-base-multilingual-cased"
 MAX_SEQ_LENGTH = 128
 IMAGE_SIZE = 224
 KG_DIM = 300  # Knowledge graph embedding dimension (zero-vector)

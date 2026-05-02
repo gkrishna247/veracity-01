@@ -21,7 +21,6 @@ from torchvision import transforms
 from transformers import AutoTokenizer
 
 from config import (
-    BERT_MODEL_NAME,
     IMAGE_SIZE,
     IMAGENET_MEAN,
     IMAGENET_STD,
@@ -35,12 +34,17 @@ from config import (
 )
 from model import UnifiedMultimodalFakeNewsDetector
 
+# Tokenizer names must match training: English uses uncased, Chinese uses multilingual
+EN_TOKENIZER_NAME = "bert-base-uncased"
+ZH_TOKENIZER_NAME = "bert-base-multilingual-cased"
+
 logger = logging.getLogger(__name__)
 
 # ── Module-level state ────────────────────────────────────────────────────────
 _model: UnifiedMultimodalFakeNewsDetector | None = None
 _device: torch.device | None = None
-_tokenizer: AutoTokenizer | None = None
+_tokenizer_en: AutoTokenizer | None = None
+_tokenizer_zh: AutoTokenizer | None = None
 
 _image_transform = transforms.Compose([
     transforms.Resize(256, interpolation=transforms.InterpolationMode.BICUBIC),
@@ -55,8 +59,8 @@ _image_transform = transforms.Compose([
 # ═══════════════════════════════════════════════════════════════════════════════
 
 def load_model() -> None:
-    """Load model checkpoint and tokenizer into module-level state."""
-    global _model, _device, _tokenizer
+    """Load model checkpoint and tokenizers into module-level state."""
+    global _model, _device, _tokenizer_en, _tokenizer_zh
 
     _device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     logger.info("Loading model on device: %s", _device)
@@ -71,25 +75,30 @@ def load_model() -> None:
     _model.eval()
     logger.info("Model loaded successfully from %s", MODEL_PATH)
 
-    _tokenizer = AutoTokenizer.from_pretrained(BERT_MODEL_NAME)
-    logger.info("Tokenizer loaded: %s", BERT_MODEL_NAME)
+    _tokenizer_en = AutoTokenizer.from_pretrained(EN_TOKENIZER_NAME)
+    _tokenizer_zh = AutoTokenizer.from_pretrained(ZH_TOKENIZER_NAME)
+    logger.info("Tokenizers loaded: EN=%s, ZH=%s", EN_TOKENIZER_NAME, ZH_TOKENIZER_NAME)
 
 
 def is_model_loaded() -> bool:
     """Check whether the model is ready for inference."""
-    return _model is not None and _tokenizer is not None
+    return _model is not None and _tokenizer_en is not None and _tokenizer_zh is not None
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
 #  Preprocessing
 # ═══════════════════════════════════════════════════════════════════════════════
 
-def _preprocess_text(text: str) -> dict[str, torch.Tensor]:
-    """Tokenize text using the multilingual BERT tokenizer.
+def _preprocess_text(text: str, lang: str = "zh") -> dict[str, torch.Tensor]:
+    """Tokenize text using the appropriate BERT tokenizer for the language.
+
+    Uses bert-base-uncased for English (GossipCop) and
+    bert-base-multilingual-cased for Chinese (Weibo), matching training.
 
     Returns dict with 'input_ids' and 'attention_mask', each shaped (1, seq_len).
     """
-    encoding = _tokenizer(
+    tokenizer = _tokenizer_en if lang == "en" else _tokenizer_zh
+    encoding = tokenizer(
         text,
         max_length=MAX_SEQ_LENGTH,
         padding="max_length",
@@ -144,10 +153,10 @@ def predict(
 
     # ── Prepare inputs ────────────────────────────────────────────────────
     if config["requires_text"] and text:
-        tokens = _preprocess_text(text)
+        tokens = _preprocess_text(text, lang=config["lang"])
     else:
         # For image-only: tokenize empty string to satisfy model signature
-        tokens = _preprocess_text("")
+        tokens = _preprocess_text("", lang=config["lang"])
 
     if config["requires_image"] and image:
         image_tensor = _preprocess_image(image)
@@ -224,7 +233,7 @@ def _lime_predict_fn(texts: list[str], lang: str = "en") -> np.ndarray:
     """Prediction function for LIME. Takes a list of strings, returns (N, 2) probs."""
     results = []
     for t in texts:
-        tokens = _preprocess_text(t)
+        tokens = _preprocess_text(t, lang=lang)
         image_tensor = _create_dummy_image()
         has_image = torch.tensor([0.0], device=_device)
         kg_embedding = _create_zero_kg()
